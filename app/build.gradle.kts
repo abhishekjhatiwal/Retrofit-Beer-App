@@ -1,9 +1,14 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.kotlin.android)
+//    alias(libs.plugins.kotlin.compose)
 //    id ("kotlin-kapt") // For Kotlin projects
-    id ("com.google.dagger.hilt.android")
+//    id ("com.google.dagger.hilt.android")
+//    kotlin("kapt")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
+    id("com.google.dagger.hilt.android")
     kotlin("kapt")
 }
 
@@ -74,11 +79,11 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 // For network request logging (optional)
 
-    implementation ("com.google.dagger:hilt-android:2.49") // Use the latest version
-    kapt ("com.google.dagger:hilt-compiler:2.49") // Use the latest version
+    implementation("com.google.dagger:hilt-android:2.49") // Use the latest version
+    kapt("com.google.dagger:hilt-compiler:2.49") // Use the latest version
 
     // Optional: For Hilt integration with Jetpack Compose
-    implementation ("androidx.hilt:hilt-navigation-compose:1.1.0") // Use the latest version
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0") // Use the latest version
 
     // Core Coil for image loading
     implementation("io.coil-kt:coil:2.7.0")
