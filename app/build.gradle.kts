@@ -14,9 +14,7 @@ plugins {
 
 android {
     namespace = "com.example.pagginationapp"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.pagginationapp"
