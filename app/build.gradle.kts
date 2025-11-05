@@ -53,6 +53,10 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.paging.common)
+    implementation(libs.androidx.material3)
+    implementation(libs.ads.mobile.sdk)
+    implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -75,4 +79,19 @@ dependencies {
 
     // Optional: For Hilt integration with Jetpack Compose
     implementation ("androidx.hilt:hilt-navigation-compose:1.1.0") // Use the latest version
+
+    // Core Coil for image loading
+    implementation("io.coil-kt:coil:2.7.0")
+// Coil extension for Jetpack Compose
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
+    // Paging 3 runtime (required for paging)
+    implementation("androidx.paging:paging-runtime:3.3.2")
+// Paging Compose integration (required for collectAsLazyPagingItems)
+    implementation("androidx.paging:paging-compose:3.3.2")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5")
+
+    implementation("com.squareup.retrofit2:converter-moshi:2.11.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
 }

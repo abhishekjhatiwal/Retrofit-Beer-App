@@ -5,8 +5,8 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.cachedIn
 import androidx.paging.map
-import com.plcoding.composepaging3caching.data.local.BeerEntity
-import com.plcoding.composepaging3caching.data.mappers.toBeer
+import com.example.pagginationapp.data.local.BeerEntity
+import com.example.pagginationapp.data.toBeer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

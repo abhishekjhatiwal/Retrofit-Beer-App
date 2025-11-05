@@ -1,8 +1,9 @@
 package com.example.pagginationapp.data
 
 import com.example.pagginationapp.data.local.BeerEntity
-import com.plcoding.composepaging3caching.data.remote.BeerDto
-import com.plcoding.composepaging3caching.domain.Beer
+import com.example.pagginationapp.data.remote.Beer
+import com.example.pagginationapp.data.remote.BeerDto
+
 
 fun BeerDto.toBeerEntity(): BeerEntity {
     return BeerEntity(
