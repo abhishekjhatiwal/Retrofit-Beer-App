@@ -14,7 +14,7 @@ plugins {
 
 android {
     namespace = "com.example.pagginationapp"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.pagginationapp"
@@ -77,8 +77,8 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 // For network request logging (optional)
 
-    implementation("com.google.dagger:hilt-android:2.49") // Use the latest version
-    kapt("com.google.dagger:hilt-compiler:2.49") // Use the latest version
+    implementation("com.google.dagger:hilt-android:2.57.2") // Use the latest version
+    kapt("com.google.dagger:hilt-compiler:2.57.2") // Use the latest version
 
     // Optional: For Hilt integration with Jetpack Compose
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0") // Use the latest version

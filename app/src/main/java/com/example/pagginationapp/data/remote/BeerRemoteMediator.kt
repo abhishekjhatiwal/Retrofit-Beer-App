@@ -5,6 +5,9 @@ import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
+import com.example.pagginationapp.data.local.BeerDatabase
+import com.example.pagginationapp.data.local.BeerEntity
+import com.example.pagginationapp.data.toBeerEntity
 import retrofit2.HttpException
 import java.io.IOException
 
